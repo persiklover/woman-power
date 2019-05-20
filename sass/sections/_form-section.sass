@@ -1,0 +1,61 @@
+.form-section
+  background: url('../img/form-section-bg.png') center top / cover
+  color: white
+  text-align: center
+  
+  +md
+    background-image: url('../img/form-section-bg-tablet.png')
+  
+  +xs
+    background-image: url('../img/form-section-bg-mobile.png')
+  
+  &__title
+    font-size: 36px
+    font-weight: normal
+    line-height: 40px
+    +xs
+      font-size: 31px
+  
+  &__footer
+    font-size: 16px
+    line-height: 24px
+
+    a
+      color: #f26065
+      text-decoration: underline
+      
+      &:hover
+        text-decoration: none
+      
+      +md
+        display: block
+
+.form
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 36px 0 40px
+  
+  +md
+    flex-direction: column
+  
+  +xs
+    margin-bottom: 15px
+
+  &__input
+    flex-grow: 1
+    flex-shrink: 0
+    margin-right: 2rem
+    font-size: 1.8rem
+    font-weight: normal
+
+    &:last-child
+      margin-right: 0
+    
+    +md
+      margin-right: 0
+      margin-bottom: 3rem
+      width: 100%
+
+      &:last-child
+        margin-bottom: 0

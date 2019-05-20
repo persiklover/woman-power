@@ -2,14 +2,14 @@
 @import "vars"
 @import "fonts.scss"
 
-/* Libs */
+/* normalize.css */
 @import "../lib/normalize/_normalize"
-/* owl-carousel */
+/* owl.carousel */
 @import "../lib/owlcarousel/scss/owl.carousel.scss"
 
 *,
-*:before,
-*:after
+*::before,
+*::after
   box-sizing: border-box
 
 button,
@@ -31,22 +31,34 @@ a
 .hidden
   display: none
 
+.input
+  border: none
+  border-radius: 32px
+  padding: 2.4rem 7.1rem
+
+  &:focus
+    outline: none
+
 .btn
   background-color: #f26065
   border: none
   border-radius: 32px
   padding: 2.4rem 7.1rem
+
   +sfUIHeavy
-  color: #fff
   font-size: 1.6rem
+  color: #fff
   cursor: pointer
   transition: background-color .3s ease
+  
   +xs
     font-size: 14px
     padding: 19px 76px
     border-radius: 32px
+  
   &:hover
     background-color: darken(#f26065, 5)
+  
   &:focus
     outline: none
 

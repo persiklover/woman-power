@@ -2,21 +2,27 @@
   position: relative
   z-index: 0
   background: #fcfcfc url('../img/home-bg.jpg') right / cover
-  padding: 133px 0
+  padding: 188px 0
+
   @media (max-width: 1700px)
     background-position: 60% 0
+
   +lg
     background-position: 60% 0
+  
   +md
     background-position: 70% 0
     padding: 124px 0
+  
   +sm
     background-position: 58% 0
     padding: 72px 0
+  
   +xs
     background-position: 83% 0
     padding: 37px 0
     color: white
+    
     &::before
       content: ''
       display: block
@@ -27,59 +33,70 @@
       width: 100%
       height: 100%
       background-color: rgba(black, .6)
-  &-text
-    &__suptitle
-      color: #f26065
-      font-size: 1.6rem
-      font-weight: 700
-      text-transform: uppercase
+  
+  &-footer
+    display: flex
+    align-items: center
+    
+    +xs
+      margin-top: 26px
+      flex-direction: column
+      align-items: flex-start
+    
+    &__btn
+      margin-right: 4.1rem
+      
       +xs
-        font-size: 14px
-    &__title
-      margin: 1rem 0 2.5rem
-      +black
-      font-size: 6rem
-      line-height: 7.2rem
-      +xs
-        margin: 1.8rem 0 2.2rem
-        font-size: 35px
-    &__description
-      font-size: 2.4rem
-      font-weight: 400
-      line-height: 3.6rem
-      +xs
-        font-size: 17.5px
-        line-height: 30px
-    &-footer
-      margin-top: 7.5rem
+        margin-bottom: 20px
+    
+    &__warning
       display: flex
       align-items: center
+
+      +sfUILight
+      font-size: 1.8rem
+      line-height: 2.2rem
+      
       +xs
-        margin-top: 26px
-        flex-direction: column
-        align-items: flex-start
-      &__btn
-        margin-right: 4.1rem
+        font-size: 14px
+      
+      &::before
+        content: ''
+        margin-right: 1rem
+        background: url('../img/warn.png') no-repeat center / contain
+        width:  1.8rem
+        height: 1.8rem
+        
         +xs
-          margin-bottom: 20px
-      &__warning
-        display: flex
-        align-items: center
-        +sfUILight
-        line-height: 2.2rem
-        +xs
-          font-size: 14px
-        &::before
-          content: ''
-          display: block
-          margin-right: 1rem
-          margin-top: -.2rem
-          width:  1.8rem
-          height: 1.8rem
-          background: url('../img/warn.png') no-repeat center / contain
-          +xs
-            margin-top: 0
-            margin-right: 10px
-            width:  18px
-            height: 18px
-            background-image: url('../img/warn-white.png')
+          margin-right: 10px
+          width:  18px
+          height: 18px
+          background-image: url('../img/warn-white.png')
+
+  &__suptitle
+    color: #f26065
+    font-size: 1.6rem
+    font-weight: 700
+    text-transform: uppercase
+    +xs
+      font-size: 14px
+  
+  &__title
+    margin: 1rem 0 2.5rem
+    +black
+    font-size: 6rem
+    line-height: 7.2rem
+    +xs
+      margin: 1.8rem 0 2.2rem
+      font-size: 35px
+  
+  &__description
+    font-size: 2.4rem
+    font-weight: 400
+    line-height: 3.6rem
+    +xs
+      font-size: 17.5px
+      line-height: 30px
+  
+  &__footer
+    margin-top: 7.5rem

@@ -12,41 +12,38 @@
   <meta name="keywords" content="">
   <meta name="author" content="">
   <!-- Website Title -->
-  <title>Page Title</title>
+  <title>Пробуждение женской энергии</title>
   <!-- Include CSS -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="home">
+  <section class="home">
     <div class="container">
-      <div class="home-text">
-        <span class="home-text__suptitle">Мастер-класс</span>
-        <h1 class="home-text__title">
-          Пробуждение<br>
-          женской энергии
-        </h1>
-        <p class="home-text__description">
-          Как научиться восхищаться собой<br>
-          и стать желанной в глазах мужчин
-        </p>
-        <div class="home-text-footer">
-          <a class="btn home-text-footer__btn" href="#form">Купить</a>
-          <span class="home-text-footer__warning">Старт сразу после покупки</span>
-        </div>
+      <span class="home__suptitle">Мастер-класс</span>
+      <h1 class="home__title">
+        Пробуждение<br>
+        женской энергии
+      </h1>
+      <p class="home__description">
+        Как научиться восхищаться собой<br>
+        и стать желанной в глазах мужчин
+      </p>
+      <div class="home-footer home__footer">
+        <a class="btn home-footer__btn" href="#form">Купить</a>
+        <small class="home-footer__warning">Старт сразу после покупки</small>
       </div>
-      <!-- /.home-text -->
     </div>
     <!-- /.container -->
-  </div>
+  </section>
   <!-- /.home -->
 
   <section class="section section1">
     <div class="container">
-      <div class="section1-wrap">
-        <div class="section1__img--mobile">
-          <img src="img/woman.png" alt="">
+      <div class="section1__wrap">
+        <div class="section1__img-wrap">
+          <img class="section1__img"
+               src="img/woman.png" alt="Девушка скрестила руки">
         </div>
-        <img class="section1__img" src="img/woman.png" alt="">
 
         <div class="section1-text">
           <span class="suptitle section1-text__suptitle">Стараюсь изо всех сил</span>
@@ -55,9 +52,6 @@
           </h2>
           <p class="section1-text__textblock">
             Вкалываю так, что не остается сил даже на семью. В выходные туплю в телек или “залипаю” в телефоне.
-          </p>
-          <p class="section1-text__textblock">
-            Срываюсь на детей. Сегодня радуюсь как всё хорошо и замечательно, а на следующий день вообще “нулёвая”, только и думаю, как бы снова не психануть.
           </p>
           <p class="section1-text__textblock">
             Любимый бесит. Занимаюсь сексом, и вроде всё неплохо, но особо ничего не чувствую, не “штырит”, не возбуждает. Как-то внутренне дискомфортно. Ему об этом стыдно и неудобно сказать. И это не ПМС.
@@ -89,7 +83,8 @@
         Вы пишите мне в Instagram
       </h2>
       <div class="section2-wrap">
-        <img class="section2__img" src="img/meditation.jpg" alt="">
+        <img class="section2__img"
+             src="img/meditation.jpg" alt="Девушка медитирует на фоне космоса">
         <div class="section2-text">
           <p>
             И спрашиваете: “А как же избежать таких ситуаций? Как научиться восхищаться собой? Восхищаться жизнью?”
@@ -97,7 +92,8 @@
           <p>
             То, о чём я расскажу, базируется на древнекитайской философии Дао.
           </p>
-          <img class="section2__img--mobile" src="img/meditation.jpg" alt="">
+          <img class="section2__img--mobile"
+               src="img/meditation.jpg" alt="Девушка медитирует на фоне космоса">
           <p>
             Известно, что в Гонконге со всех сторон дымят фабрики. При объективно плохой экологии, у китайцев отменное здоровье. Это подтверждается самой большой средней продолжительностью жизни в мире.
           </p>
@@ -122,7 +118,7 @@
 
   <section class="section cta-block">
     <div class="container">
-      <div class="cta-block-wrap">
+      <div class="cta-block__wrap">
         <span class="suptitle cta-block__suptitle">Мастер-класс</span>
         <h2 class="title cta-block__title">Пробуждение женской энергии</h2>
         <div class="cta-block__text">
@@ -136,9 +132,9 @@
             Одни советуют носить юбки, другие крутить воронки, плести бусики из бузины, рисовать мандалы.
           </p>
         </div>
-        <p class="cta-block__important">
+        <strong class="cta-block__important">
           Я отделила зёрна от плевел и простым доступным языком раскрыла эту тему.
-        </p>
+        </strong>
         <a href="#form" class="btn cta-block__btn">Пробудить в себе женскую энергию</a>
       </div>
       <!-- /.cta-block-wrap -->
@@ -442,67 +438,84 @@
   </section>
   <!-- /.section info -->
 
-  <section class="section form" id="form">
+  <section class="section form-section" id="form">
     <div class="container">
-      <h2 class="form__title">
+      <h2 class="form-section__title">
         Цена — <b>490 рублей</b>
       </h2>
-      <div class="form-wrap">
-
-        <script id="b49daf03914d1b27b9843166a0c88a468de2f5a4"
-          src="https://isaeva-online.ru/pl/lite/widget/script?id=81078"></script>
-
-      </div>
-      <span class="form__footer">Этот мастер-класс входит в состав курса <a href="http://course.isaeva-online.ru/beautiful/">“Я прекрасная вселенная”</a></span>
+      <form class="form" action="#">
+        <input class="form__input input" type="text" placeholder="Email*" required>
+        <input class="form__input input" type="text" placeholder="Имя*" required>
+        <input class="form__input btn" type="submit" value="Купить">
+      </form>
+      <footer class="form-section__footer">
+        Этот мастер-класс входит в состав курса <a href="http://course.isaeva-online.ru/beautiful/">“Я прекрасная вселенная”</a>
+      </footer>
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.section form -->
+  <!-- /.section form-section -->
 
-  <section class="section qna">
+  <section class="section faq">
     <div class="container">
-      <span class="suptitle qna__suptitle">Остались вопросы?</span>
-      <h2 class="title qna__title">Посмотри, возможно, уже есть ответы на них</h2>
+      <span class="suptitle faq__suptitle">Остались вопросы?</span>
+      <h2 class="title faq__title">Посмотри, возможно, уже есть ответы на них</h2>
 
-      <ul class="qna-list">
-        <li class="qna-list__item">
-          <span>Могу ли я купить сейчас, а приступить к изучению позже?</span>
-          <div class="qna-dropdown">
+      <ul class="faq-list">
+        
+        <li class="faq-list-item">
+          <button class="faq-list-item__header">
+            Могу ли я купить сейчас, а приступить к изучению позже?
+          </button>
+          <div class="faq-list-item__dropdown">
             Можешь. Материалы доступны в твоём учебном кабинете в течение 1 года с момента покупки.
           </div>
         </li>
-        <li class="qna-list__item">
-          <span>Какие есть способы оплаты?</span>
-          <div class="qna-dropdown">
+
+        <li class="faq-list-item">
+          <button class="faq-list-item__header">
+            Какие есть способы оплаты?
+          </button>
+          <div class="faq-list-item__dropdown">
             Ты можешь оплатить банковской картой, Сбербанк.Онлайн, Qiwi и многими другими способами
           </div>
         </li>
-        <li class="qna-list__item">
-          <span>Я не из России. Как мне оплатить и присоединиться к курсу?</span>
-          <div class="qna-dropdown">
+
+        <li class="faq-list-item">
+          <button class="faq-list-item__header">
+            Я не из России. Как мне оплатить и присоединиться к курсу?
+          </button>
+          <div class="faq-list-item__dropdown">
             Наши способы оплаты позволяют совершить платёж, практически из любой точки мира. Банковская карта, PayPal, перевод WesternUnion и другие. Если возникают сложности с оплатой, ты можешь написать в нашу службу заботы, мы обязательно найдем удобные для тебя варианты оплаты.
           </div>
         </li>
-        <li class="qna-list__item">
-          <span>Я в другом часовом поясе. Как мне смотреть уроки?</span>
-          <div class="qna-dropdown">
+
+        <li class="faq-list-item">
+          <button class="faq-list-item__header">
+            Я в другом часовом поясе. Как мне смотреть уроки?
+          </button>
+          <div class="faq-list-item__dropdown">
             Материалы доступны в личном кабинете сразу после оплаты. Посмотреть можно из любой точки мира.
           </div>
         </li>
-        <li class="qna-list__item">
-          <span>На мой вопрос нет ответа</span>
-          <div class="qna-dropdown">
-            Ты можешь обратиться к нам с любым вопросом, написав в нашу службу поддержки info@isaeva-online.ru
+        
+        <li class="faq-list-item">
+          <button class="faq-list-item__header">
+            На мой вопрос нет ответа
+          </button>
+          <div class="faq-list-item__dropdown">
+            Ты можешь обратиться к нам с любым вопросом, написав в нашу службу поддержки <a href="mailto:info@isaeva-online.ru">info@isaeva-online.ru</a>
           </div>
         </li>
-      </ul>
-      <!-- /.qna-list -->
 
-      <a class="btn qna__btn" href="#form">Купить</a>
+      </ul>
+      <!-- /.faq-list -->
+
+      <a class="btn faq__btn" href="#form">Купить</a>
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.section qna -->
+  <!-- /.section faq -->
 
   <section class="section feedback">
     <div class="container">

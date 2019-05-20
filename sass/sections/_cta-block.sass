@@ -1,42 +1,54 @@
 .cta-block
   background: black url('../img/cta-block-bg.jpg') left / cover
   color: white
+  
   @media (max-width: 1600px)
     background-position: -210px center
+  
   +lg
     background-position: 0 center
     background-image: url('../img/cta-block-bg-tablet.jpg')
+  
   +xs
     background-image: url('../img/cta-block-bg-mobile.jpg')
     background-position: center top
-  &-wrap
+  
+  &__wrap
     max-width: 80.5rem
     margin: auto
     text-align: center
-    // background-color: rgba(pink, .2)
+    
     +md
       max-width: 100%
+  
   &__suptitle
     &::before
       display: none
+  
   &__title
     margin: 1rem 0 3rem
+  
   &__text p
     margin: 10px 0
     line-height: 2.4rem
+    
     +xs
       font-size: 14px
       line-height: 22px
+  
   &__important
     margin-top: 40px
+    
     +xs
       margin-top: 30px
       font-size: 14px
       line-height: 22px
+  
   &__btn
     display: inline-block
     padding: 2.3rem 4.6rem
     margin-top: 30px
+    
     +xs
       width: 100%
       padding: 18px 14px

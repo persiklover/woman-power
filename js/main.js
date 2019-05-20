@@ -7,15 +7,15 @@ $('a[href^="#"]').click(function(e) {
   var el = $($(this).attr('href'));
   if (el.length) {
     $('html, body').animate({
-      scrollTop: el.offset().top - 0 + 'px'
+      scrollTop: el.offset().top + 'px'
     }, 500);
   }
 });
 
-$('.qna-dropdown').slideToggle();
-$('.qna-list__item > span').click(function() {
+$('.faq-list-item__dropdown').toggleClass('hidden');
+$('.faq-list-item__header').click(function() {
   $(this).toggleClass('active');
-  $(this).siblings('.qna-dropdown').slideToggle();
+  $(this).next().toggleClass('hidden');
 });
 
 $(".feedback-slider").owlCarousel({
