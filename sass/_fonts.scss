@@ -1,0 +1,83 @@
+$font: "../fonts/";
+
+// Regular
+@font-face {
+  font-family: 'Gilroy';
+  font-display: swap;
+  src: local('Gilroy-Regular'),
+       url($font + 'Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
+       url($font + 'Gilroy-Regular/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin regular {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: normal;
+}
+
+// Bold
+@font-face {
+  font-family: 'Gilroy';
+  font-display: swap;
+  src: local('Gilroy-Bold'),
+       url($font + 'Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+       url($font + 'Gilroy-Bold/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+}
+
+// Black
+@font-face {
+  font-family: 'Gilroy';
+  font-display: swap;
+  src: local('Gilroy-Black'),
+       url($font + 'Gilroy-Black/Gilroy-Black.woff2') format('woff2'),
+       url($font + 'Gilroy-Black/Gilroy-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin black {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 900;
+}
+
+// SF UI Heavy
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  src: local('SF UI Display Heavy'),
+       local('SFUIDisplay-Heavy'),
+       url($font + 'SFUIDisplay-Heavy/SFUIDisplay-Heavy.woff2') format('woff2'),
+       url($font + 'SFUIDisplay-Heavy/SFUIDisplay-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin sfUIHeavy {
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: 800;
+}
+
+// SF UI Light
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  src: local('SF UI Display Light'),
+       local('SFUIDisplay-Light'),
+       url($font + 'SFUIDisplay-Light/SFUIDisplay-Light.woff2') format('woff2'),
+       url($font + 'SFUIDisplay-Light/SFUIDisplay-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@mixin sfUILight {
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: 200;
+}

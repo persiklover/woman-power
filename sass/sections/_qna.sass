@@ -1,0 +1,64 @@
+.qna
+  background-color: #f7f7f7
+  &__suptitle
+    @media (max-width: 1450px)
+      &::before
+        display: none
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    margin-top: 46px
+    span
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 14px 29px
+
+      +bold
+      font-size: 1.8rem
+      line-height: 2.4rem
+      +sm
+        font-size: 16px
+      +xs
+        padding: 10px 15px
+      &.active::after
+        content: '-'
+      &::after
+        content: '+'
+        flex-shrink: 0
+        margin-left: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        width:  40px
+        height: 40px
+        background-color: #f26065
+        border-radius: 50%
+        color: white
+        font-size: 24px
+    &__item
+      background-color: white
+      margin-bottom: 30px
+      cursor: pointer
+      +xs
+        margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+  &__btn
+    display: inline-block
+    margin-top: 50px
+    +xs
+      margin-top: 20px
+      display: block
+      widows: 100%
+      text-align: center
+  &-dropdown
+    border-top: 1px solid #e6e6e6
+    padding: 26px 29px
+    padding-right: 114px
+    +xs
+      padding: 18px 15px
+      padding-right: 15px
+      font-size: 14px
+      line-height: 22px

@@ -1,0 +1,137 @@
+.learn
+  text-align: center
+  &__suptitle
+    &::before
+      display: none
+  &-wrap
+    position: relative
+    margin: 62px 0
+    +lg
+      margin: 42px 0
+    +xs
+      margin-bottom: 10px
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      z-index: -1
+      left: 50%
+      top:  0
+      width: 2px
+      height: 100%
+      border-left: 2px dashed #e6e6e6
+      transform: translate(-50%, 0)
+      +xs
+        display: none
+  &-item
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 8px
+    &:last-child
+      margin-bottom: 0
+    @media (min-width: 576px)
+      &:nth-child(even)
+        flex-direction: row-reverse
+        .learn-item
+          &__img-wrap
+            padding-right: 0
+            padding-left:  80px
+            +md
+              padding-left: 40px
+          &-text
+            text-align: right
+            padding-left:  0
+            padding-right: 80px
+            +md
+              padding-right: 40px
+    +xs
+      flex-direction: column
+    &__img-wrap
+      min-width: 50%
+      padding-right: 80px
+      height: auto
+      +md
+        padding-right: 40px
+      +xs
+        padding: 0
+        width: 100%
+    &__img
+      max-width: 100%
+      +xs
+        display: none
+      &--mobile
+        display: none
+        +xs
+          display: block
+          width: 100%
+          height: auto
+    &__num
+      position: absolute
+      left: 50%
+      top:  50%
+      transform: translate(-50%, -50%)
+      display: flex
+      justify-content: center
+      align-items: center
+      width:  6.2rem
+      height: 6.2rem
+      border: 0.2rem dashed #e6e6e6
+      border-radius: 50%
+      background-color: #fff
+
+      +bold
+      color: #f26065
+      font-size: 24px
+      +xs
+        display: none
+    &-text
+      min-width: 50%
+      padding-left: 80px
+      text-align: left
+      +md
+        padding-left: 40px
+      +xs
+        width: 100%
+        padding: 0
+        margin-top: 16px
+        text-align: left
+        font-size: 18px
+        line-height: 22px
+        &__title
+          margin: 0
+          margin-bottom: 12px
+        &__description
+          font-size: 14px
+          max-width: 240px
+
+.card-shaded
+  background: url('../img/shape.jpg') center / cover
+  overflow: hidden
+  &__body
+    padding: 38px 0
+    margin: 20px
+    background-color: white
+    +xs
+      padding: 26px 10px
+      margin: 10px
+  &__title
+    margin: 0
+    color: #f26065
+    +black
+    font-size: 2.4rem
+    line-height: 2.4rem
+    +xs
+      font-size: 18px
+      line-height: 24px
+  &__text
+    color: #595959
+    font-size: 1.6rem
+    font-weight: bold
+    line-height: 2.4rem
+    +xs
+      margin: 0
+      margin-top: 13px
+      font-size: 14px
+      line-height: 22px

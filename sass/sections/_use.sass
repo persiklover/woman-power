@@ -1,0 +1,57 @@
+.use
+  background-color: #f7f7f7
+  &__suptitle
+    @media (max-width: 1450px)
+      &::before
+        display: none
+    +sm
+      display: block
+      text-align: center
+  &__title
+    margin-bottom: 6rem
+    +sm
+      text-align: center
+  &-wrap
+    // background-color: pink
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &-item
+    position: relative
+    max-width: (100% / 3) - 1%
+    padding: 39px 15px 61px
+    padding-left: 85px
+    margin-bottom: 2rem
+    background-color: white
+    color: #595959
+    font-size: 16px
+    line-height: 24px
+    +md
+      max-width: (100% / 2) - 1%
+      // Чтобы текст вместился в 3 строки
+      font-size: 15px
+    +sm
+      max-width: 100%
+      padding: 24px 26px
+      padding-left: 80px
+      font-size: 14px
+      line-height: 22px
+      &:last-child
+        margin-bottom: 0
+    @for $i from 1 through 6
+      &:nth-child(#{$i})::before
+        content: '0' + $i
+    &::before
+      position: absolute
+      left: 18px
+      top:  50px
+      content: '01'
+      display: inline-block
+      text-shadow: 1px 0px 0px #f26065, -1px 0px 0px #f26065, 0px 1px 0px #f26065, 0px -1px 0px #f26065
+      +black
+      color: #fff
+      font-size: 48px
+      line-height: 24px
+      +sm
+        top: 30px
+        font-size: 36px

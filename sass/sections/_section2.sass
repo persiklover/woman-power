@@ -1,0 +1,67 @@
+.section2
+  background: url("../img/section2-bg.png") no-repeat 110% center/800px
+  @media (max-width: 1600px)
+    background-position: 162% -6px
+  +lg
+    background-position: 165% 60px
+    background-size: 600px
+  +md
+    background: none
+  +xs
+    background-color: #f7f7f7
+  @media (max-width: 1450px)
+    & .suptitle::before
+        display: none
+  &-wrap
+    position: relative
+    display: block
+  &__img
+    height: 315px
+    position: absolute
+    right: 0
+    top: 0
+    margin-left: 7rem
+    &--mobile
+      display: none
+      +xs
+        display: block
+        margin: 0 0 27px
+        max-width: 100%
+        width: 100%
+        height: auto
+    +lg
+      position: static
+      float: right
+      margin-left:   23px
+      margin-bottom: 23px
+    +md
+      max-width: 338px
+    +sm
+      max-width: 270px
+      height: auto
+    +xs
+      display: none
+  &-text
+    margin-right: 370px
+    column-width: 374px
+    column-count: 2
+    column-gap: 27px
+
+    color: #595959
+    font-size: 16px
+    line-height: 2.4rem
+    +lg
+      display: inline
+      margin-right: 0
+      column-width: initial
+      column-count: initial
+      column-gap:   initial
+    p
+      margin: 15px 0
+      +xs
+        font-size: 14px
+        line-height: 22px
+      &:first-of-type
+        margin-top: 0
+      &:last-of-type
+        margin-bottom: 0

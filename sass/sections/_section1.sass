@@ -1,0 +1,106 @@
+.section1
+  position: relative
+  background: url('../img/section1-bg.png') no-repeat left / contain
+  padding: 9.9rem 0
+  @media (max-width: 1700px)
+    background-position: -23rem bottom
+  +lg
+    background-position: -40rem 0
+  +md
+    padding: 69px 0
+    background-size: cover
+  +sm
+    padding: 48px 0
+    background-position: -57rem bottom
+  +xs
+    padding: 45px 0
+    background: none
+  &-wrap
+    display: flex
+    justify-content: space-between
+    +xs
+      flex-direction: column
+      align-items: center
+  &__img
+    position: absolute
+    left: 0
+    bottom: 0
+    margin-left: 23%
+    height: 65.1rem
+    @media (max-width: 1600px)
+      margin-left: 15%
+    +lg
+      margin-left: 12%
+    +md
+      margin-left: 2%
+    +sm
+      bottom: 0
+    +xs
+      display: none
+    &--mobile
+      display: none
+      +xs
+        display: flex
+        justify-content: center
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        width: 100%
+        background: url('../img/section1-bg.png') no-repeat left / cover
+      img
+        margin-top: 45px
+        height: 341px
+  &-text
+    margin-left: 60.3rem
+    +lg
+      margin-left: 49rem
+    +md
+      margin-left: 38rem
+    +sm
+      // margin-left: 33rem
+    +xs
+      margin: 0
+      margin-top: 375px
+      max-width: 100%
+    &__suptitle
+      position: relative
+      display: inline-block
+      color: #f26065
+      +bold
+      font-size: 1.4rem
+      line-height: 2.2rem
+      text-transform: uppercase
+      +xs
+        font-size: 14px
+      &::before
+        content: ''
+        display: block
+        width:  9rem
+        height: 0.2rem
+        background-color: #f26065
+        position: absolute
+        right: 100% 
+        top:   50%
+        transform: translate(0, -50%)
+        margin-right: 3rem
+        +md
+          display: none
+    &__title
+      margin: 2.2rem 0 3.2rem
+      +black
+      font-size: 3.6rem
+      line-height: 4rem
+      +xs
+        font-size: 24px
+    &__textblock
+      margin: 1rem 0
+      color: #595959
+      font-size: 1.6rem
+      line-height: 2.4rem
+      &:last-child
+        margin-bottom: 0
+      +xs
+        margin: 12px 0
+        font-size: 14px
+        line-height: 22px
